@@ -24,7 +24,10 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
       - name: Load and cache dependencies
+        id: checking-cache
         uses: ./.github/actions/cached-dependencies
+      - name: was cached used?
+        run: echo "cach was use? ${{ steps.checking-cache.outputs.used-cache }}"
       - name: Test code
         id: run-tests
         run: npm run test
