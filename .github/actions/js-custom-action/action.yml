@@ -1,0 +1,6 @@
+name: "checking logs"
+description: "training"
+
+runs:
+  using: "node22"
+  main: "main.js"
