@@ -10,7 +10,9 @@ function run() {
 
   exec.exec(` echo "OH HI ${name} ${lastName}`);
 
-  core.notice("hello przemek");
+  const fullName = `Your full name is: ${name} ${lastName}`;
+
+  core.setOutput("full-name", { fullName });
 }
 
 run();

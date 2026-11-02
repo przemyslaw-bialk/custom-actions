@@ -10,6 +10,10 @@ inputs:
     required: false
     default: "Kowalski"
 
+outputs:
+  full-name:
+    description: "full name of the user"
+
 runs:
   using: "node24"
   main: "main.js"
