@@ -1,6 +1,15 @@
 name: "checking logs"
 description: "training"
 
+inputs:
+  name:
+    description: "set your name"
+    required: true
+  last-name:
+    description: "set ur last name"
+    required: false
+    default: "Kowalski"
+
 runs:
   using: "node24"
   main: "main.js"

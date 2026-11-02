@@ -65,8 +65,11 @@ jobs:
           path: ./dist
       - name: Output contents
         run: ls
-      - name: Deploy site
-        run: echo "Deploying..."
+      - name: My custom action JS
+        uses: ./.github/actions/js-custom-action
+        with:
+          name: "Przemek"
+          last-name: "Bialk"
   information:
     runs-on: ubuntu-latest
     steps:
